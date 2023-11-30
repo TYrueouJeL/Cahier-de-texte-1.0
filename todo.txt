@@ -1,0 +1,11 @@
+-supprimer les devoirs et les données liées ✅
+-générer un id propre aux devoirs basé sur une horloge (année/mois/jour/heure/min/sec/ms) ✅
+-lier les devoirs à leur créateur
+-changer la couleur des devoirs par rapport à la date de création du devoirs et à la date de fin
+-créer un systeme de tri par rapport à la date de création/fin ou par matiere
+-lier les données des devoirs à une base de données au lieu du local storage
+-créer une page de cours dans laquelle on peut ajouter des cours en paragraphes ✅
+-possibilité de modifier un cour ou un devoir
+-créer une page de cours dans laquelle on peut ajouter des fichiers
+
+!! changer le systeme de modification pour creer un formulaire spécifique !!
