@@ -1,0 +1,11 @@
+@import 'vendors';
+@import 'bootswatch/dist/solar/bootswatch';
+@import 'abstracts';
+@import 'components';
+
+section {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="js/script.js" type="module"></script>
+        
+        <title>Cahier de texte</title>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cahier de texte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto" name="navbar">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Accueil
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Devoirs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cours</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="container pt-5 active">
+          <h1>Bienvenue dans le cahier de texte</h1>
+        </section>
+
+        <section class="container pt-5">
+          <div>
+            <h1>Devoirs</h1>
+            <div class="row" id="devoirs-content">
+
+            </div>
+          </div>
+
+          <div>
+            <button type="button" name="supAllWorkBtn" class="btn btn-warning">Supprimer tous les devoirs</button>
+          </div>
+
+          <div id="devoirs-form" class="pt-4">
+            <form>
+              <fieldset>
+                <legend>Nouveaux devoirs</legend>
+
+                <div class="row">
+                  <div class="form-group col-3">
+                    <label for="devoirTitre" class="form-label mt-4">Titre du devoir</label>
+                    <textarea class="form-control" id="devoirsTitre" rows="1" required></textarea>
+                  </div>
+
+                  <div class="form-group col-3">
+                    <label for="devoirDescription" class="form-label mt-4">Description du devoir</label>
+                    <textarea class="form-control" id="devoirDescription" rows="2" required></textarea>
+                  </div>
+
+                  <div class="form-group col-3">
+                    <label for="selectMatiere" class="from-label mt-4 py-1">Selection de la Matière</label>
+                    <select class="form-select" id="selectMatiere" required>
+                      <option>HTML, CSS, Bootstrap</option>
+                      <option>C</option>
+                      <option>CEJM</option>
+                      <option>CGE</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-3">
+                    <label for="devoirsDate" class="form-label mt-4">Date du devoir</label>
+                    <textarea class="form-control" id="devoirsDate" rows="1" required></textarea>
+                  </div>
+                </div>
+                <div>
+                  <button type="button" name="addWorkBtn" class="btn btn-outline-info">Ajouter</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+
+        <section class="container pt-5">
+          <h1>Cours</h1>
+
+          <div class="row" id="cours-content">
+
+          </div>
+          <div class="col-2">
+            <button type="button" name="supAllLessonBtn" class="btn btn-warning">Supprimer tous les cours</button>
+          </div>
+
+          <div id="devoirs-form" class="pt-4">
+            <form name="modif" class="modif">
+              <fieldset>
+                <legend>Nouveaux cours</legend>
+
+                <div class="row">
+                  <div class="form-group col-3">
+                    <label for="devoirTitre" class="form-label mt-4">Titre du cours</label>
+                    <textarea class="form-control" id="lessonTitle" rows="1" required></textarea>
+                  </div>
+
+                  <div class="form-group col-3">
+                    <label for="selectMatiere" class="from-label mt-4 py-1">Selection de la Matière</label>
+                    <select class="form-select" id="selectLessonMatiere" required>
+                      <option>HTML, CSS, Bootstrap</option>
+                      <option>C</option>
+                      <option>CEJM</option>
+                      <option>CGE</option>
+                    </select>
+                  </div>
+
+                  <div class="w-100"></div>
+
+                  <div class="form-group col-12 pb-3">
+                    <label for="devoirDescription" class="form-label mt-4">Contenu du cours</label>
+                    <textarea class="form-control" id="lessonContent" rows="6" required></textarea>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div>
+            <button type="button" name="addLessonBtn" class="btn btn-outline-success">Ajouter un cours</button>
+          </div>
+        </section>
+      </main>
+    </body>
+</html>

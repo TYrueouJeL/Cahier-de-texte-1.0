@@ -1,0 +1,27 @@
+@mixin button($color: $color-primary) {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: $color;
+    border-color: $color;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: background-color 500ms, color 500ms;
+
+    &:hover {
+        color: $color;
+        background-color: white;
+    }
+}
+
+@mixin button-outlined($color: $color-primary) {
+    @include button($color);
+
+    color: $color;
+    background: transparent;
+
+    &:hover {
+        color: white;
+        background-color: $color;
+    }
+}

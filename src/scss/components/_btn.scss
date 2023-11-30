@@ -1,0 +1,17 @@
+.btn {
+    &.btn-primary {
+        @include button;
+
+        &.btn-outline {
+            @include button-outlined;
+        }
+    }
+
+    &.btn-secondary {
+        @include button($color: $color-secondary);
+
+        &.btn-outline {
+            @include button-outlined($color: $color-secondary);
+        }
+    }
+}
