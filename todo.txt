@@ -7,5 +7,3 @@
 -créer une page de cours dans laquelle on peut ajouter des cours en paragraphes ✅
 -possibilité de modifier un cour ou un devoir
 -créer une page de cours dans laquelle on peut ajouter des fichiers
-
-!! changer le systeme de modification pour creer un formulaire spécifique !!
