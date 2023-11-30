@@ -146,9 +146,16 @@ function addLesson(lesson) {
             })
         }**/
 
+        let cours = JSON.parse(localStorage.getItem('cours')) || [];
+
         lessonContent.value = lesson.content;
         lessonTitle.value = lesson.titre;
         lessonMatiere.value = lesson.matiere;
+
+        cours = cours.filter(d => d.id != lesson.id);
+        localStorage.setItem('cours', JSON.stringify(cours));
+
+        event.currentTarget.closest('.cour').parentNode.remove();
     })
 }
 
